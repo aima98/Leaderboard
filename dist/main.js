@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n    margin: 0;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  margin: 0;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,47 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_Data_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/Data.js */ \"./src/modules/Data.js\");\n/* harmony import */ var _modules_Score_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/Score.js */ \"./src/modules/Score.js\");\n/* harmony import */ var _modules_Refresh_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/Refresh.js */ \"./src/modules/Refresh.js\");\n/* harmony import */ var _modules_Display_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/Display.js */ \"./src/modules/Display.js\");\n\n\n\n\n\n\nconst form = document.getElementById('form');\nconst name = document.getElementById('name');\nconst score = document.getElementById('score');\n\nform.addEventListener('submit', (e) => {\n  e.preventDefault();\n  const newScore = new _modules_Score_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"](name.value, score.value);\n  _modules_Data_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].push(newScore);\n  form.reset();\n});\n\n(0,_modules_Refresh_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n(0,_modules_Display_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(_modules_Data_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/Data.js":
+/*!*****************************!*\
+  !*** ./src/modules/Data.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst Data = [];\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Data);\n\n//# sourceURL=webpack://leaderboard/./src/modules/Data.js?");
+
+/***/ }),
+
+/***/ "./src/modules/Display.js":
+/*!********************************!*\
+  !*** ./src/modules/Display.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst displayList = document.querySelector('.names-scores');\n\nconst displayData = (Data) => {\n  if (Data === []) {\n    displayList.innerHTML = '<p class=\\'details\\'>No scores are available!</p>';\n  }\n\n  Data.forEach((element) => {\n    const userName = document.createElement('p');\n    userName.classList.add('user-name');\n    userName.id = 'details';\n    displayList.appendChild(userName);\n    userName.innerHTML = `${element.name} : ${element.score}`;\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayData);\n\n//# sourceURL=webpack://leaderboard/./src/modules/Display.js?");
+
+/***/ }),
+
+/***/ "./src/modules/Refresh.js":
+/*!********************************!*\
+  !*** ./src/modules/Refresh.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _Display_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Display.js */ \"./src/modules/Display.js\");\n/* harmony import */ var _Data_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Data.js */ \"./src/modules/Data.js\");\n\n\n\nconst displayList = document.querySelector('.names-scores');\nconst refreshBtn = document.getElementById('refresh');\n\nconst refreshData = () => {\n  refreshBtn.addEventListener('click', () => {\n    displayList.innerHTML = '';\n    (0,_Display_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_Data_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (refreshData);\n\n//# sourceURL=webpack://leaderboard/./src/modules/Refresh.js?");
+
+/***/ }),
+
+/***/ "./src/modules/Score.js":
+/*!******************************!*\
+  !*** ./src/modules/Score.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass Score {\n  constructor(name, score) {\n    this.name = name;\n    this.score = score;\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Score);\n\n//# sourceURL=webpack://leaderboard/./src/modules/Score.js?");
 
 /***/ })
 

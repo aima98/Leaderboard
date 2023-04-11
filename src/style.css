@@ -1,3 +1,78 @@
-body {
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.rec-scores {
+  float: left;
+  width: 40%;
+}
+
+.scores-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  height: 2em;
+  box-shadow: 3px 3px 0 0 #000;
+}
+
+.details {
   margin: 0;
+  padding: 2px;
+}
+
+.names-scores {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1px;
+}
+
+.names-scores :nth-child(even) {
+  background: rgb(202, 201, 201);
+}
+
+.user-name {
+  padding: 10px 5px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.add-score {
+  float: right;
+  width: 40%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input {
+  height: 2em;
+  width: 80%;
+}
+
+#submit {
+  width: 5em;
+}
+
+#refresh :hover {
+  cursor: pointer;
+}
+
+#refresh {
+  float: right;
 }
