@@ -9,20 +9,31 @@
 <body>
     <main>
         <h1>Leaderboard</h1>
-        <section class="rec-scores">
-            <div class="scores-list">
-                <h2>Recent Scores</h2>
-                <button type="submit" id="refresh">Refresh</button>
+        <section id="add-new-game">
+            <form id="form-name-game">
+                <div class="add-game">
+                    <input type="text" name="game-name" id="game-name" placeholder="Enter game name" required />
+                    <button type="submit" id="add-game">Get Started</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="rec-scores" id="rec-scores">
+            <div class="head-scores">
+                <h2>Recent scores</h2>
+                <form id="refresh-form">
+                    <button type="submit" id="refresh">Refresh</button>
+                </form>
             </div>
-    
+
             <div class="names-scores"></div>
         </section>
 
-        <section class="add-score">
+        <section class="add-score" id="add-score">
             <h2>Add your score</h2>
             <form id="form">
-                <input type="text" name="name" id="name" placeholder="Your name" required/>
-                <input type="number" name="score" id="score" placeholder="Your score" required/>
+                <input type="text" name="name" id="name" placeholder="Your name" required />
+                <input type="number" name="score" id="score" placeholder="Your score" required />
                 <button type="submit" id="submit">Submit</button>
             </form>
         </section>
