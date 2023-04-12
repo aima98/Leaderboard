@@ -1,14 +1,16 @@
 import displayData from './Display.js';
-import Data from './Data.js';
 
 const displayList = document.querySelector('.names-scores');
-const refreshBtn = document.getElementById('refresh');
+const refresh = document.getElementById('refresh-form"');
 
-const refreshData = () => {
-  refreshBtn.addEventListener('click', () => {
+const refreshDisplay = () => {
+  if (!refresh) return;
+
+  refresh.addEventListener('submit', (e) => {
+    e.preventDefault();
     displayList.innerHTML = '';
-    displayData(Data);
+    displayData();
   });
 };
 
-export default refreshData;
+export default refreshDisplay;

@@ -43,6 +43,13 @@ button {
   background: rgb(202, 201, 201);
 }
 
+.head-scores {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .user-name {
   padding: 10px 5px;
   margin-bottom: 1px;
@@ -75,4 +82,5 @@ input {
 
 #refresh {
   float: right;
+  width: 90px;
 }
