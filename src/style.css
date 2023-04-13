@@ -29,6 +29,7 @@ main {
   margin-top: 10px;
   padding-bottom: 20px;
   float: left;
+  display: none;
 }
 
 .scores-list {
@@ -78,6 +79,7 @@ button {
 .add-score {
   float: right;
   width: 40%;
+  display: none;
 }
 
 form {
@@ -93,7 +95,7 @@ form {
 
 input {
   padding: 0.7em;
-  width: 100%;
+  width: 92%;
   border-radius: 5px;
 }
 
@@ -162,6 +164,7 @@ input::placeholder {
   .add-score {
     width: 40%;
     float: right;
+    display: none;
   }
 
   .rec-scores {
@@ -169,6 +172,7 @@ input::placeholder {
     margin-top: 10px;
     padding-bottom: 20px;
     float: left;
+    display: none;
   }
 
   .head-scores {
