@@ -25,10 +25,10 @@ main {
 }
 
 .rec-scores {
-  width: 100%;
-  display: none;
+  width: 40%;
   margin-top: 10px;
   padding-bottom: 20px;
+  float: left;
 }
 
 .scores-list {
@@ -76,8 +76,8 @@ button {
 }
 
 .add-score {
-  width: 100%;
-  display: none;
+  float: right;
+  width: 40%;
 }
 
 form {
@@ -160,7 +160,14 @@ input::placeholder {
   }
 
   .add-score {
-    width: 45%;
+    width: 40%;
+    float: right;
+  }
+
+  .rec-scores {
+    width: 40%;
+    margin-top: 10px;
+    padding-bottom: 20px;
     float: left;
   }
 
@@ -169,6 +176,12 @@ input::placeholder {
     width: 96%;
     justify-content: space-between;
     align-items: center;
+  }
+
+  input {
+    padding: 0.7em;
+    width: 80%;
+    border-radius: 5px;
   }
 
   .names-scores {
