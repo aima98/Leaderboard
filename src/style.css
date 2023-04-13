@@ -1,16 +1,35 @@
 html {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  height: auto;
+  box-shadow: 2px 2px 2px 2px #000;
+  border-radius: 5px;
+  width: 90%;
+  margin: 20px auto 10px auto;
 }
 
 main {
   padding: 20px;
-  width: 80%;
-  margin: 0 auto;
+  width: 82%;
+  height: 100vh;
+}
+
+#add-new-game {
+  height: auto;
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px #000;
+  padding: 10px;
 }
 
 .rec-scores {
-  float: left;
   width: 40%;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  float: left;
+  display: none;
 }
 
 .scores-list {
@@ -27,13 +46,14 @@ button {
 
 .details {
   margin: 0;
-  padding: 2px;
+  padding: 10px;
 }
 
 .names-scores {
   width: 100%;
   height: auto;
-  border: 2px solid black;
+  box-shadow: 2px 2px 2px 2px #000;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   padding-bottom: 1px;
@@ -59,21 +79,36 @@ button {
 .add-score {
   float: right;
   width: 40%;
+  display: none;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.2em;
+  padding: 0 10px 10px 10px;
+}
+
+.score-txt {
+  padding: 10px 0 0 10px;
 }
 
 input {
-  height: 2em;
-  width: 80%;
+  padding: 0.7em;
+  width: 92%;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  font-size: 1em;
 }
 
 #submit {
-  width: 5em;
+  width: 6em;
+}
+
+#add-game {
+  width: 10em;
 }
 
 #refresh :hover {
@@ -83,4 +118,93 @@ input {
 #refresh {
   float: right;
   width: 90px;
+}
+
+#submit,
+#add-game {
+  padding: 0.5em;
+  box-shadow: 3px 3px 0 0 rgb(0, 0, 0);
+  font-size: 0.9em;
+}
+
+.add-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    padding: 40px;
+    width: 100%;
+  }
+
+  main {
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .add-game {
+    width: 80%;
+  }
+
+  .add-new-game {
+    width: 80%;
+  }
+
+  #add-new-game {
+    height: auto;
+    width: 93%;
+    box-shadow: 2px 2px 2px 2px #000;
+    padding: 10px;
+  }
+
+  .add-score {
+    width: 40%;
+    float: right;
+    display: none;
+  }
+
+  .rec-scores {
+    width: 40%;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    float: left;
+    display: none;
+  }
+
+  .head-scores {
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  input {
+    padding: 0.7em;
+    width: 80%;
+    border-radius: 5px;
+  }
+
+  .names-scores {
+    width: 95%;
+    height: auto;
+    box-shadow: 2px 2px 2px 2px #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1px;
+  }
+
+  .add-score-2 {
+    width: 100%;
+    float: left;
+  }
+
+  .recent-scores {
+    width: 45%;
+    float: right;
+  }
 }
